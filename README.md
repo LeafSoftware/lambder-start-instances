@@ -27,8 +27,8 @@ based on UTC.
 
     lambder events add \
       --name StartInstances \
-      --function-name Lambder-start-instances
-      --cron 'cron(0 12 ? * MON-FRI *)' \
+      --function-name Lambder-start-instances \
+      --cron 'cron(0 12 ? * MON-FRI *)'
 
 ## TODO
 
