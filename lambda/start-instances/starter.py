@@ -1,5 +1,6 @@
-import boto3
+3import boto3
 import logging
+import time
 
 class Starter:
   TAG_NAME = 'LambderStart'
@@ -35,5 +36,6 @@ class Starter:
       if state == 'stopped':
         self.logger.info('Starting ' + name_str)
         instance.start()
+        time.sleep(5)
       else:
         self.logger.info('Will not start ' + name_str + ', state: ' + state)
